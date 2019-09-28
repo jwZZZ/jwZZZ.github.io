@@ -7,21 +7,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>函数式编程范式 - Hexo</title>
+<title>归档: 2019/9 - Hexo</title>
 
 
-    <meta name="description" content="在java8之前我们遍历list是这样写的for(int i=0;i&amp;lt;wordList.size();i++){    wordList.get(i).toUpperCase()}在java8支持stream时，我们遍历集合变得简单：wordList.stream.map(w-&amp;gt;w.toUpperCase())一句话搞定，map()用于映射，遍历原stream中的元素，转换后构成新的s">
-<meta property="og:type" content="article">
-<meta property="og:title" content="函数式编程范式">
-<meta property="og:url" content="http://yoursite.com/2019/08/22/functionalProgramming/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/archives/2019/09/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="在java8之前我们遍历list是这样写的for(int i=0;i&amp;lt;wordList.size();i++){    wordList.get(i).toUpperCase()}在java8支持stream时，我们遍历集合变得简单：wordList.stream.map(w-&amp;gt;w.toUpperCase())一句话搞定，map()用于映射，遍历原stream中的元素，转换后构成新的s">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-08-22T13:30:11.375Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="函数式编程范式">
-<meta name="twitter:description" content="在java8之前我们遍历list是这样写的for(int i=0;i&amp;lt;wordList.size();i++){    wordList.get(i).toUpperCase()}在java8支持stream时，我们遍历集合变得简单：wordList.stream.map(w-&amp;gt;w.toUpperCase())一句话搞定，map()用于映射，遍历原stream中的元素，转换后构成新的s">
+<meta name="twitter:title" content="Hexo">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -92,7 +88,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/touxiang.jpg" alt="函数式编程范式" height="28">
+                <img src="/images/touxiang.jpg" alt="Hexo" height="28">
             
             </a>
         </div>
@@ -142,96 +138,31 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-08-22T13:29:00.000Z">2019-08-22</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 分钟 读完 (大约 280 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                函数式编程范式
-            
-        </h1>
-        <div class="content">
-            <p>在java8之前我们遍历list是这样写的<br>for(int i=0;i&lt;wordList.size();i++){<br>    wordList.get(i).toUpperCase()<br>}<br>在java8支持stream时，我们遍历集合变得简单：<br>wordList.stream.map(w-&gt;w.toUpperCase())<br>一句话搞定，map()用于映射，遍历原stream中的元素，转换后构成新的stream<br>除了map ，还有filter()用于过滤<br>List<string> list = new ArrayList<string>();<br>     list.add(“java”);<br>     list.add(“heml”);<br>     list.add(“python”);<br>     List<string> singlelist = list.stream().filter(w-&gt;w.equals(“java”)).collect(Collectors.toList());<br>     System.out.println(singlelist.toString());<br>运行结果：[java]<br>filter（）方法返回的是stream，<br>利用collect（Collectors.toList()）<br>将数据收集进一个列表(Stream 转换为 List，允许重复值，有顺序)<br>这里需要注意的是需要创建一个新的List来存储过滤后的list，原来list并不会发生改变。<br>利用collect（Collectors.toSet()）<br>将数据收集进一个集合(Stream 转换为 Set，不允许重复值，没有顺序)<br>除了上述方法，还可以自定义的实现Collection的数据结构收集<br>//利用LinkedList收集<br>collect(Collectors.toCollection(LinkedList::new));<br>//利用CopyOnWriteArrayList收集<br>collect(Collectors.toCollection(CopyOnWriteArrayList::new))<br>//利用TreeSet收集<br>collect(Collectors.toCollection(TreeSet::new));<br>//利用joining（）对stream字符串进行拼接<br>collect(Collectors.joining())</string></string></string></p>
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-<div class="card">
+<div class="card widget">
     <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
+        <h3 class="tag is-link">
+        九月 2019
+        </h3>
+        <div class="timeline">
+        
+            <article class="media">
                 
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
-
-<div class="notification is-danger">
-    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
-</div>
-
-                
+                <div class="media-content">
+                    <div class="content">
+                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-09-27T15:06:12.000Z">2019-09-27</time>
+                        <a href="/2019/09/27/test/" class="title has-link-black-ter is-size-6 has-text-weight-normal">test</a>
+                        <div class="level article-meta is-mobile">
+                            <div class="level-left">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
         </div>
-    </div>
-</div>
-
-
-
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/08/22/macfastkey/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">macbook一些常用的快捷键</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/08/14/start-blog/">
-                <span class="level-item">初创博客</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
     </div>
 </div>
 
@@ -744,7 +675,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/touxiang.jpg" alt="函数式编程范式" height="28">
+                    <img src="/images/touxiang.jpg" alt="Hexo" height="28">
                 
                 </a>
                 <p class="is-size-7">
