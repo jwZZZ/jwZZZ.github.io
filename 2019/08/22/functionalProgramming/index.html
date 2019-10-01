@@ -17,12 +17,12 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="函数式编程，让代码更优雅。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-28T13:39:54.567Z">
+<meta property="og:image" content="https://images.pexels.com/photos/2017299/pexels-photo-2017299.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+<meta property="og:updated_time" content="2019-10-01T05:03:05.860Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="函数式编程范式">
 <meta name="twitter:description" content="函数式编程，让代码更优雅。">
-<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+<meta name="twitter:image" content="https://images.pexels.com/photos/2017299/pexels-photo-2017299.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
 
 
 
@@ -144,6 +144,12 @@
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     
+    <div class="card-image">
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="https://images.pexels.com/photos/2017299/pexels-photo-2017299.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="函数式编程范式">
+        </span>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
@@ -154,7 +160,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 308 个字)
+                    2 分钟 读完 (大约 294 个字)
                 </span>
                 
                 
@@ -167,7 +173,7 @@
             
         </h1>
         <div class="content">
-            <p><img src="https://images.pexels.com/photos/2017299/pexels-photo-2017299.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt><br>  函数式编程，让代码更优雅。</p>
+            <p>  函数式编程，让代码更优雅。</p>
 <a id="more"></a>
 <p>在java8之前我们遍历list是这样写的<br>for(int i=0;i&lt;wordList.size();i++){<br>    wordList.get(i).toUpperCase()<br>}<br>在java8支持stream时，我们遍历集合变得简单：<br>wordList.stream.map(w-&gt;w.toUpperCase())<br>一句话搞定，map()用于映射，遍历原stream中的元素，转换后构成新的stream<br>除了map ，还有filter()用于过滤<br>List<string> list = new ArrayList<string>();<br>     list.add(“java”);<br>     list.add(“heml”);<br>     list.add(“python”);<br>     List<string> singlelist = list.stream().filter(w-&gt;w.equals(“java”)).collect(Collectors.toList());<br>     System.out.println(singlelist.toString());<br>运行结果：[java]<br>filter（）方法返回的是stream，<br>利用collect（Collectors.toList()）<br>将数据收集进一个列表(Stream 转换为 List，允许重复值，有顺序)<br>这里需要注意的是需要创建一个新的List来存储过滤后的list，原来list并不会发生改变。<br>利用collect（Collectors.toSet()）<br>将数据收集进一个集合(Stream 转换为 Set，不允许重复值，没有顺序)<br>除了上述方法，还可以自定义的实现Collection的数据结构收集<br>//利用LinkedList收集<br>collect(Collectors.toCollection(LinkedList::new));<br>//利用CopyOnWriteArrayList收集<br>collect(Collectors.toCollection(CopyOnWriteArrayList::new))<br>//利用TreeSet收集<br>collect(Collectors.toCollection(TreeSet::new));<br>//利用joining（）对stream字符串进行拼接<br>collect(Collectors.joining())</string></string></string></p>
 
@@ -426,7 +432,7 @@
             
             <a href="/2019/08/23/iterator/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="容器深入研究">
+                    <img class="thumbnail" src="https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="容器深入研究">
                 </p>
             </a>
             
@@ -445,7 +451,7 @@
             
             <a href="/2019/08/22/macfastkey/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="macbook一些常用的快捷键">
+                    <img class="thumbnail" src="https://images.pexels.com/photos/2597365/pexels-photo-2597365.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="macbook一些常用的快捷键">
                 </p>
             </a>
             
@@ -464,7 +470,7 @@
             
             <a href="/2019/08/22/functionalProgramming/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="函数式编程范式">
+                    <img class="thumbnail" src="https://images.pexels.com/photos/2017299/pexels-photo-2017299.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="函数式编程范式">
                 </p>
             </a>
             
@@ -483,7 +489,7 @@
             
             <a href="/2019/08/14/start-blog/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="初创博客">
+                    <img class="thumbnail" src="/img/1.jpg" alt="初创博客">
                 </p>
             </a>
             
@@ -561,7 +567,7 @@
             
             <a href="/2019/08/23/iterator/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="容器深入研究">
+                    <img class="thumbnail" src="https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="容器深入研究">
                 </p>
             </a>
             
@@ -580,7 +586,7 @@
             
             <a href="/2019/08/22/macfastkey/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="macbook一些常用的快捷键">
+                    <img class="thumbnail" src="https://images.pexels.com/photos/2597365/pexels-photo-2597365.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="macbook一些常用的快捷键">
                 </p>
             </a>
             
@@ -599,7 +605,7 @@
             
             <a href="/2019/08/22/functionalProgramming/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="函数式编程范式">
+                    <img class="thumbnail" src="https://images.pexels.com/photos/2017299/pexels-photo-2017299.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="函数式编程范式">
                 </p>
             </a>
             
@@ -618,7 +624,7 @@
             
             <a href="/2019/08/14/start-blog/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="初创博客">
+                    <img class="thumbnail" src="/img/1.jpg" alt="初创博客">
                 </p>
             </a>
             
