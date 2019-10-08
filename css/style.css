@@ -50,6 +50,48 @@ textarea {
     top: 1.5rem;
   }
 }
+/** 拉伸布局宽一些 start*/
+.columns {
+  margin-left: -7rem;
+  margin-right: -7rem;
+  margin-top: -1rem;
+}
+.navbar .container {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.navbar .container .navbar-menu {
+  margin-right: -13rem;
+}
+.footer .container {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.footer .container .level-end {
+  margin-right: -13rem;
+}
+@media screen and (max-width: 768px) {
+  .columns {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    margin-top: -0.75rem;
+  }
+  .navbar .container {
+    margin: 0 auto;
+    position: relative;
+  }
+  .navbar .container .navbar-menu {
+    margin-right: 0rem;
+  }
+  .footer .container {
+    margin: 0 auto;
+    position: relative;
+  }
+  .footer .container .level-end {
+    margin-right: 0rem;
+  }
+}
+/** 拉伸布局宽一些 end*/
 .tag.is-grey {
   background: #e7e7e7;
 }
