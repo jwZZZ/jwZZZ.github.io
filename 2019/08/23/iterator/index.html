@@ -270,6 +270,30 @@
 </div>
 
 
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '3a0c28865b3b01967622',
+        clientSecret: '8c4eb0ce61110333c9056eff42847876045d66bd',
+        id: '51e610b69cdc6161febe402148b71510',
+        repo: 'blog_comment',
+        owner: 'jwzzz',
+        admin: "jwzzz",
+        createIssueManually: false,
+        distractionFreeMode: false
+    })
+    gitalk.render('comment-container')
+</script>
+
+    </div>
+</div>
 </div>
                 
  
@@ -848,5 +872,6 @@ document.addEventListener('DOMContentLoaded', function () {
 <link rel="stylesheet" href="/css/search.css">
 <link rel="stylesheet" href="/css/insight.css">
     
+    <script type="text/javascript" defer src="/js/global-hot-data.js"></script>
 </body>
 </html>

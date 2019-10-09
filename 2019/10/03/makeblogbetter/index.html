@@ -195,13 +195,13 @@
 
 <h4 id="1-设置访问人数"><a href="#1-设置访问人数" class="headerlink" title="1.设置访问人数"></a>1.设置访问人数</h4><p>  在icarus主题中已经集成了不蒜子计数插件，我们只需要在主题的_config.yml文件将busuanzi: false 设置为 ture</p>
 <p>  然后在/layout/common/footer.ejs文件中配置访客人数即可</p>
-  <figure class="highlight hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id=<span class="hljs-string">"busuanzi_container_site_uv"</span>&gt;</span><br><span class="line">&lt;!-- &lt;%- _p(<span class="hljs-string">'plugin.visitor'</span>, <span class="hljs-string">'&lt;span id="busuanzi_value_site_uv"&gt;0&lt;/span&gt;'</span>) %&gt; --&gt;</span><br><span class="line">❤️感谢&lt;span id="busuanzi_value_site_uv"&gt;&lt;/span&gt;位小伙伴的</span><br><span class="line">              &lt;/span&gt;</span><br><span class="line">	&lt;span id="busuanzi_value_site_pv"&gt;&lt;/span&gt; 次光临 ❤️</span><br></pre></td></tr></table></figure>
+  <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id=<span class="string">"busuanzi_container_site_uv"</span>&gt;</span><br><span class="line">&lt;!-- &lt;%- _p(<span class="string">'plugin.visitor'</span>, <span class="string">'&lt;span id="busuanzi_value_site_uv"&gt;0&lt;/span&gt;'</span>) %&gt; --&gt;</span><br><span class="line">❤️感谢&lt;span id="busuanzi_value_site_uv"&gt;&lt;/span&gt;位小伙伴的</span><br><span class="line">              &lt;/span&gt;</span><br><span class="line">	&lt;span id="busuanzi_value_site_pv"&gt;&lt;/span&gt; 次光临 ❤️</span><br></pre></td></tr></table></figure>
 
 <h4 id="2-设置文章阅读更多"><a href="#2-设置文章阅读更多" class="headerlink" title="2.设置文章阅读更多"></a>2.设置文章阅读更多</h4><p>  很多小伙伴在刚建立好博文后，在主页都是显示了整片博文的内容，这样很不好看。</p>
 <p>  在博文的md文件中在你认为合适的位置加上&lt;!--more--&gt;，便可以显示“阅读更多”，让前面的内容形成一个导引。</p>
 <p>  点击“阅读更多”就是阅读整篇文章内容。</p>
 <h4 id="3-摘要配图"><a href="#3-摘要配图" class="headerlink" title="3.摘要配图"></a>3.摘要配图</h4><p>  文章导引只有标题，略显单薄，不少小伙伴都希望配张图片美化。那怎么加图片呢？</p>
-<p>  很简单，只要在博文开头处加上thumbnail标签，后面跟上图片的url即可。<br>  <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: icarus主题配置优化：访问人数，文章阅读更多，摘要配图等。</span><br><span class="line">date: <span class="hljs-number">2019</span>-<span class="hljs-number">10</span>-<span class="hljs-number">03</span> <span class="hljs-number">11</span>:<span class="hljs-number">54</span>:<span class="hljs-number">53</span></span><br><span class="line">thumbnail: 图片url</span><br><span class="line">tags: blog</span><br><span class="line">categoriers: [blog]</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>  很简单，只要在博文开头处加上thumbnail标签，后面跟上图片的url即可。<br>  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: icarus主题配置优化：访问人数，文章阅读更多，摘要配图等。</span><br><span class="line">date: <span class="number">2019</span>-<span class="number">10</span>-<span class="number">03</span> <span class="number">11</span>:<span class="number">54</span>:<span class="number">53</span></span><br><span class="line">thumbnail: 图片url</span><br><span class="line">tags: blog</span><br><span class="line">categoriers: [blog]</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
 <h4 id="4-文章详情页面设置双栏模式"><a href="#4-文章详情页面设置双栏模式" class="headerlink" title="4.文章详情页面设置双栏模式"></a>4.文章详情页面设置双栏模式</h4><p>   在原始的主题设置中，主页是有三列的，点击文章查看全部内容时也是显示三列，这个时候可以想办法把右边的一栏放到左边，然后中间那栏适当放宽。<br>   实现参考<a href="https://github.com/removeif/hexo-theme-icarus-removeif" target="_blank" rel="noopener">removerif博主分享的源码</a>和<a href="https://dp2px.com/2019/06/04/icarus-theme/" target="_blank" rel="noopener">水寒</a>的这篇文章进行设置。</p>
 
         </div>
@@ -268,6 +268,30 @@
 </div>
 
 
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '3a0c28865b3b01967622',
+        clientSecret: '8c4eb0ce61110333c9056eff42847876045d66bd',
+        id: '437ceafbe29dc766cc621db5459a3684',
+        repo: 'blog_comment',
+        owner: 'jwzzz',
+        admin: "jwzzz",
+        createIssueManually: false,
+        distractionFreeMode: false
+    })
+    gitalk.render('comment-container')
+</script>
+
+    </div>
+</div>
 </div>
                 
  
@@ -846,5 +870,6 @@ document.addEventListener('DOMContentLoaded', function () {
 <link rel="stylesheet" href="/css/search.css">
 <link rel="stylesheet" href="/css/insight.css">
     
+    <script type="text/javascript" defer src="/js/global-hot-data.js"></script>
 </body>
 </html>
