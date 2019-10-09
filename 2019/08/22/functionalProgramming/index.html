@@ -18,7 +18,7 @@
 <meta property="og:description" content="函数式编程，让代码更优雅。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://images.pexels.com/photos/2017299/pexels-photo-2017299.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-<meta property="og:updated_time" content="2019-10-01T05:03:05.860Z">
+<meta property="og:updated_time" content="2019-10-09T13:16:10.943Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="函数式编程范式">
 <meta name="twitter:description" content="函数式编程，让代码更优雅。">
@@ -165,7 +165,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 294 个字)
+                    2 分钟 读完 (大约 297 个字)
                 </span>
                 
                 
@@ -183,9 +183,15 @@
             
         </h1>
         <div class="content">
-            <p>  函数式编程，让代码更优雅。</p>
+            <blockquote>
+<p>函数式编程，让代码更优雅。</p>
+</blockquote>
 <a id="more"></a>
-<p>在java8之前我们遍历list是这样写的<br>for(int i=0;i&lt;wordList.size();i++){<br>    wordList.get(i).toUpperCase()<br>}<br>在java8支持stream时，我们遍历集合变得简单：<br>wordList.stream.map(w-&gt;w.toUpperCase())<br>一句话搞定，map()用于映射，遍历原stream中的元素，转换后构成新的stream<br>除了map ，还有filter()用于过滤<br>List<string> list = new ArrayList<string>();<br>     list.add(“java”);<br>     list.add(“heml”);<br>     list.add(“python”);<br>     List<string> singlelist = list.stream().filter(w-&gt;w.equals(“java”)).collect(Collectors.toList());<br>     System.out.println(singlelist.toString());<br>运行结果：[java]<br>filter（）方法返回的是stream，<br>利用collect（Collectors.toList()）<br>将数据收集进一个列表(Stream 转换为 List，允许重复值，有顺序)<br>这里需要注意的是需要创建一个新的List来存储过滤后的list，原来list并不会发生改变。<br>利用collect（Collectors.toSet()）<br>将数据收集进一个集合(Stream 转换为 Set，不允许重复值，没有顺序)<br>除了上述方法，还可以自定义的实现Collection的数据结构收集<br>//利用LinkedList收集<br>collect(Collectors.toCollection(LinkedList::new));<br>//利用CopyOnWriteArrayList收集<br>collect(Collectors.toCollection(CopyOnWriteArrayList::new))<br>//利用TreeSet收集<br>collect(Collectors.toCollection(TreeSet::new));<br>//利用joining（）对stream字符串进行拼接<br>collect(Collectors.joining())</string></string></string></p>
+<p>在java8之前我们遍历list是这样写的</p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;wordList.size();i++)&#123;</span><br><span class="line">    wordList.get(i).toUpperCase()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在java8支持stream时，我们遍历集合变得简单：<br>wordList.stream.map(w-&gt;w.toUpperCase())<br>一句话搞定，map()用于映射，遍历原stream中的元素，转换后构成新的stream<br>除了map ，还有filter()用于过滤<br>  <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line"> 	list.add(<span class="hljs-string">"java"</span>);</span><br><span class="line"> 	list.add(<span class="hljs-string">"heml"</span>);</span><br><span class="line"> 	list.add(<span class="hljs-string">"python"</span>);</span><br><span class="line"> 	List&lt;String&gt; singlelist = list.stream().filter(w-&gt;w.equals(<span class="hljs-string">"java"</span>)).collect(Collectors.toList());</span><br><span class="line"> 	System.out.println(singlelist.toString());</span><br></pre></td></tr></table></figure></p>
+<p>运行结果：[java]<br>filter（）方法返回的是stream，<br>利用collect（Collectors.toList()）<br>将数据收集进一个列表(Stream 转换为 List，允许重复值，有顺序)<br>这里需要注意的是需要创建一个新的List来存储过滤后的list，原来list并不会发生改变。<br>利用collect（Collectors.toSet()）<br>将数据收集进一个集合(Stream 转换为 Set，不允许重复值，没有顺序)<br>除了上述方法，还可以自定义的实现Collection的数据结构收集<br>  <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//利用LinkedList收集</span></span><br><span class="line">collect(Collectors.toCollection(LinkedList::<span class="hljs-keyword">new</span>));</span><br><span class="line"><span class="hljs-comment">//利用CopyOnWriteArrayList收集</span></span><br><span class="line">collect(Collectors.toCollection(CopyOnWriteArrayList::<span class="hljs-keyword">new</span>))</span><br><span class="line"><span class="hljs-comment">//利用TreeSet收集</span></span><br><span class="line">collect(Collectors.toCollection(TreeSet::<span class="hljs-keyword">new</span>));</span><br><span class="line"><span class="hljs-comment">//利用joining（）对stream字符串进行拼接</span></span><br><span class="line">collect(Collectors.joining())</span><br></pre></td></tr></table></figure></p>
 
         </div>
         
